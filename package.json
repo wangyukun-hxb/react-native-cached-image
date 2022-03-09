@@ -12,11 +12,7 @@
       "NODE_ENV": "test"
     },
     "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/CachedImageExample/"
-    ],
-    "modulePathIgnorePatterns": [
-      "/CachedImageExample/"
+      "/node_modules/"
     ],
     "verbose": true
   },
@@ -51,7 +47,7 @@
     "lodash": "4.17.19",
     "prop-types": "15.5.10",
     "react-native-clcasher": "1.0.0",
-    "react-native-fetch-blob": "0.10.16",
+    "rn-fetch-blob": "^0.10.16",
     "url-parse": "1.1.9"
   },
   "devDependencies": {
