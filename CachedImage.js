@@ -45,7 +45,7 @@ function getImageProps(props) {
   ]);
 }
 
-const CACHED_IMAGE_REF = "cachedImage";
+const CACHED_IMAGE_REF = React.createRef();
 
 class CachedImage extends React.Component {
   static propTypes = {
@@ -116,7 +116,7 @@ class CachedImage extends React.Component {
 
   setNativeProps(nativeProps) {
     try {
-      this.refs[CACHED_IMAGE_REF].setNativeProps(nativeProps);
+      CACHED_IMAGE_REF.current.setNativeProps(nativeProps);
     } catch (e) {
       console.error(e);
     }
